@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font-fraunces: 'Fraunces', serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --color-white: hsl(0, 0%, 100%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-dark-cyan: hsl(158, 36%, 37%);
+  --color-dark-blue: hsl(212, 21%, 14%);
+  --color-gray-blue: hsl(228, 12%, 48%);
+}
+
+body {
+  background-color: var(--color-cream);
+  font-family: var(--font-montserrat);
+  font-size: calc(14 / 16 * 1rem);
+  color: var(--color-gray-blue);
+  display: grid;
+  place-items: center;
+}
+
+.product-card {
+  margin: 16px;
+  border-radius: 12px;
+  overflow: clip;
+  background-color: var(--color-white);
+}
+
+.product-content {
+  padding: 22px 24px;
+}
+
+.product-label {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: calc(4 / 16 * 1rem);
+  font-size: calc(14 / 16 * 1rem);
+  margin-bottom: calc(8 / 16 * 1rem);
+}
+
+.product-title {
+  font-family: var(--font-fraunces);
+  color: var(--color-dark-blue);
+  font-size: calc(32 / 16 * 1rem);
+  line-height: 1;
+  margin-bottom: calc(20 / 16 * 1rem);
+}
+
+.product-text {
+  font-weight: 500;
+  margin-bottom: calc(20 / 16 * 1rem);
+}
+
+.product-price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: calc(18 / 16 * 1rem);
+  margin-bottom: calc(12 / 16 * 1rem);
+}
+
+.product-price {
+  color: var(--color-dark-cyan);
+  font-family: var(--font-fraunces);
+  font-size: calc(32 / 16 * 1rem);
+  font-weight: 700;
+}
+
+.product-original-price {
+  color: var(--color-gray-blue);
+  font-family: var(--font-montserrat);
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.product-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  background: var(--color-dark-cyan);
+  border: none;
+  color: var(--color-white);
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 8px 12px;
+  min-height: 48px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
